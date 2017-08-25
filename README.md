@@ -1,2 +1,3 @@
-# aeviou
-an input-method built with react-native
+# Aeviou
+
+Input-method built with react-native.
