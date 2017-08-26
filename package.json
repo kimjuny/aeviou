@@ -7,6 +7,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "android": "./node_modules/.bin/react-native run-android",
     "ios": "./node_modules/.bin/react-native run-ios",
+    "build": "node ./scripts/build.js",
     "test": "jest",
     "lint": "eslint ."
   },
@@ -22,7 +23,9 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.3.0",
+    "fs-extra": "^4.0.1",
     "jest": "20.0.4",
+    "js-yaml": "^3.9.1",
     "react-test-renderer": "16.0.0-alpha.12"
   },
   "jest": {

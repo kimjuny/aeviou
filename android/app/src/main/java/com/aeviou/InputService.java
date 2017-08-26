@@ -6,7 +6,6 @@ import android.view.View;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.common.LifecycleState;
-import com.facebook.react.shell.MainReactPackage;
 
 /**
  * Created by erickim on 2017/8/26.
@@ -24,11 +23,11 @@ public class InputService extends InputMethodService {
                 .setApplication(getApplication())
                 .setBundleAssetName("index.android.bundle")
                 .setJSMainModuleName("index.android")
-                .addPackage(new MainReactPackage())
+                .addPackage(AeviouPackage.getInstance())
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
-        mReactRootView.startReactApplication(mReactInstanceManager, "Keyboard", null);
+        mReactRootView.startReactApplication(mReactInstanceManager, "IME", null);
 
         return mReactRootView;
     }

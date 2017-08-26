@@ -1,6 +1,6 @@
 import { AppRegistry } from 'react-native';
 import Settings from './src/views/containers/Settings';
-import Keyboard from './src/views/containers/Keyboard';
+import IME from './src/views/containers/IME';
 
 AppRegistry.registerComponent('Settings', () => Settings);
-AppRegistry.registerComponent('Keyboard', () => Keyboard);
+AppRegistry.registerComponent('IME', () => IME);
