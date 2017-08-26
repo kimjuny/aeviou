@@ -1,3 +1,19 @@
 # Aeviou
 
-Input-method built with react-native.
+⌨️ an IME built with React-Native.
+
+## Screenshots
+
+## Prerequisites
+
+## Install
+
+## Start
+
+## Roadmap
+
+## Credits
+
+## Contributing
+
+## License
