@@ -10,7 +10,7 @@ const file = `${root}/src/views/utils/keys.js`
 try {
   const doc = yaml.safeLoad(fs.readFileSync(config, 'utf8'))
   fse.removeSync(file)
-  fse.outputFileSync(file, JSON.stringify(doc))
+  fse.outputFileSync(file, `export default ${JSON.stringify(doc)}`)
 
   console.log('keys.yml has loaded.')
 } catch (e) {
