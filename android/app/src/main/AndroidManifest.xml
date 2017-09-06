@@ -30,6 +30,7 @@
       <service
         android:name=".InputService"
         android:label="@string/label"
+        android:theme="@style/Theme.Transparent"
         android:permission="android.permission.BIND_INPUT_METHOD">
         <intent-filter>
           <action android:name="android.view.InputMethod" />

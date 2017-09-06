@@ -5,7 +5,6 @@ import styles from './styles/IME';
 
 const IME = () => (
   <View style={styles.ime}>
-    <View />
     <View style={styles.container}>
       <HexKeyboard />
     </View>

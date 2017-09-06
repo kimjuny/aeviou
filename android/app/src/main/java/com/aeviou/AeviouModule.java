@@ -1,5 +1,6 @@
 package com.aeviou;
 
+import android.view.inputmethod.InputConnection;
 import android.widget.Toast;
 
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -25,7 +26,7 @@ public class AeviouModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "Toast";
+        return "Aeviou";
     }
 
     @Nullable
@@ -40,5 +41,11 @@ public class AeviouModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void show(String message, int duration) {
         Toast.makeText(getReactApplicationContext(), message, duration).show();
+    }
+
+    @ReactMethod
+    public void write(String text) {
+        InputConnection inputConnection = InputService.instance.getCurrentInputConnection();
+        inputConnection.commitText(text, 1);
     }
 }

@@ -2,11 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   ime: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
   },
   container: {
     width: '100%',

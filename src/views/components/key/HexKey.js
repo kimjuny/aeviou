@@ -1,10 +1,25 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import {
+  Text, TouchableOpacity, NativeModules, View,
+} from 'react-native';
 
-const HexKey = ({ name }) => (
-  <View>
-    <Text>{ name }</Text>
-  </View>
-);
+class HexKey extends React.PureComponent {
+  onPress() {
+    const { name } = this.props;
+    const { Aeviou } = NativeModules;
+    Aeviou.write(name);
+  }
+
+  render() {
+    const { name } = this.props;
+    return (
+      <TouchableOpacity
+        onPress={this.onPress.bind(this)}
+      >
+        <Text>{ name }</Text>
+      </TouchableOpacity>
+    );
+  }
+}
 
 export default HexKey;
